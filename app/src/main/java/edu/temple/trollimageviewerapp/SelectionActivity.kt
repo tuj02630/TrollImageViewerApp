@@ -20,20 +20,22 @@ class SelectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val recycler = findViewById<RecyclerView>(R.id.recyclerview)
-        title = "Selector";
+        title = this.resources.getString(R.string.option_text);
         val iolist = ArrayList<ImageObject>();
-        iolist.add(ImageObject("Aradia", R.drawable.aradia))
-        iolist.add(ImageObject("Tavros", R.drawable.tavros))
-        iolist.add(ImageObject("Sollux", R.drawable.sollux))
-        iolist.add(ImageObject("Karkat", R.drawable.karkat))
-        iolist.add(ImageObject("Nepeta", R.drawable.nepeta))
-        iolist.add(ImageObject("Kanaya", R.drawable.kanaya))
-        iolist.add(ImageObject("Terezi", R.drawable.terezi))
-        iolist.add(ImageObject("Vriska", R.drawable.vriska))
-        iolist.add(ImageObject("Equius", R.drawable.equius))
-        iolist.add(ImageObject("Gamzee", R.drawable.gamzee))
-        iolist.add(ImageObject("Eridan", R.drawable.eridan))
-        iolist.add(ImageObject("Feferi", R.drawable.feferi))
+        val myArray = this.resources.getStringArray(R.array.troll_list);
+        var t = 0;
+        iolist.add(ImageObject(myArray[t++], R.drawable.aradia))
+        iolist.add(ImageObject(myArray[t++], R.drawable.tavros))
+        iolist.add(ImageObject(myArray[t++], R.drawable.sollux))
+        iolist.add(ImageObject(myArray[t++], R.drawable.karkat))
+        iolist.add(ImageObject(myArray[t++], R.drawable.nepeta))
+        iolist.add(ImageObject(myArray[t++], R.drawable.kanaya))
+        iolist.add(ImageObject(myArray[t++], R.drawable.terezi))
+        iolist.add(ImageObject(myArray[t++], R.drawable.vriska))
+        iolist.add(ImageObject(myArray[t++], R.drawable.equius))
+        iolist.add(ImageObject(myArray[t++], R.drawable.gamzee))
+        iolist.add(ImageObject(myArray[t++], R.drawable.eridan))
+        iolist.add(ImageObject(myArray[t++], R.drawable.feferi))
 
 
         // Creating an instance of our custom adapter and passing in context, along with a
