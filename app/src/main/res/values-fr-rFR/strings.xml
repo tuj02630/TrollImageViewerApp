@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TrollImageViewerApp</string>
-    <string name="disp_title">Display</string>>
+    <string name="disp_title">Affichage</string>>
     <string name = "option_text">Choisir une option:</string>
     <string-array name="troll_list">
         <item>Aradia, Servante du Temps</item>
