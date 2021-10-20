@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">TrollImageViewerApp</string>
+    <string name="disp_title">Display</string>>
+    <string-array name="troll_list">
+        <item>Aradia, Maid of Time</item>
+        <item>Tavros, Page of Breath</item>
+        <item>Sollux, Mage of Doom</item>
+        <item>Karkat, Knight of Blood</item>
+        <item>Nepeta, Rogue of Heart</item>
+        <item>Kanaya, Sylph of Space</item>
+        <item>Terezi, Seer of Mind</item>
+        <item>Vriska, Thief of Light</item>
+        <item>Equius, Heir of Void</item>
+        <item>Gamzee, Bard of Rage</item>
+        <item>Eridan, Prince of Hope</item>
+        <item>Feferi, Witch of Life</item>
+    </string-array>>
+    <string name = "option_text">Choose an option:</string>
 </resources>

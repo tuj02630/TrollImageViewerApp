@@ -1,25 +1,16 @@
-package edu.temple.customviewadapter
+package edu.temple.trollimageviewerapp
 
-import android.R.attr
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.BaseAdapter
 import android.widget.ImageView
-import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import android.R.attr.y
 
-import android.R.attr.x
-
-import android.view.animation.TranslateAnimation
-import edu.temple.trollimageviewerapp.R
+import java.util.ArrayList
 
 
-class ImageAdapter (_context: Context, _imageObjects: Array<ImageObject>) : RecyclerView.Adapter<ImageAdapter.ViewHolder>() {
+class ImageAdapter(_context: Context, _imageObjects: ArrayList<ImageObject>) : RecyclerView.Adapter<ImageAdapter.ViewHolder>() {
 
     var onItemClick: ((ImageObject) -> Unit)? = null
     private val imageObjects = _imageObjects;
@@ -45,7 +36,7 @@ class ImageAdapter (_context: Context, _imageObjects: Array<ImageObject>) : Recy
         return x;
     }
 
-    override fun onBindViewHolder(holder: ImageAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.io = imageObjects[position]
         holder.iv.setImageResource(imageObjects[position].resourceId)
     }
